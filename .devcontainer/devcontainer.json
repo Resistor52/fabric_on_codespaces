@@ -1,5 +1,5 @@
 {
   "name": "fabric_container",
   "image": "resistor52/fabric:latest",
-  "postStartCommand": "cp -R /workspaces/fabric_on_codespaces/custom_patterns/* /root/.config/fabric/patterns/"
+  "postStartCommand": "cp -R /workspaces/fabric_on_codespaces/custom_patterns/* /root/.config/fabric/patterns/ && /root/modify_env.sh"
 }
