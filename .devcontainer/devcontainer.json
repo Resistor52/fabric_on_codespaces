@@ -1,0 +1,4 @@
+{
+  "name": "fabric_container",
+  "image": "resistor52/fabric:latest"
+}
