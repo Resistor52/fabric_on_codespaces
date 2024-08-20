@@ -17,7 +17,7 @@ The goals of this exercise are to:
 
 # OUTPUT
 
-- Create a bulleted list of each translation and the supported language 
+- Create a left-aligned bulleted list of each translation and the supported language 
 
 # OUTPUT INSTRUCTIONS
 
