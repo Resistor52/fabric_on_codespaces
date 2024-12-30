@@ -1,5 +1,6 @@
 {
   "name": "fabric_container",
   "image": "resistor52/fabric:latest",
-  "postStartCommand": "cp -R /workspaces/fabric_on_codespaces/custom_patterns/* /home/fab/.config/fabric/patterns/ && /home/fab/modify_env.sh"
+  "postStartCommand": "mkdir -p /fab/.ssh && ssh-keygen -t rsa -b 4096 -N '' -f /fab/.ssh/id_rsa && cp /fab/.ssh/id_rsa.pub /fab/.ssh/authorized_keys && chmod 600 /fab/.ssh/authorized_keys && cp -R /workspaces/fabric_on_codespaces/custom_patterns/* /home/fab/.config/fabric/patterns/ && /home/fab/modify_env.sh && chown -R fab:fab /home/fab/",
+  "forwardPorts": [22]
 }
